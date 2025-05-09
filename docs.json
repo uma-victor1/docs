@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "Plant Store",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#00A3E1",
+    "light": "#00A3E1",
+    "dark": "#00A3E1"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,12 +14,8 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
+            "group": "Get Started.",
+            "pages": ["quickstart", "planthome", "development"]
           },
           {
             "group": "Essentials",
@@ -39,9 +35,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
