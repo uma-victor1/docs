@@ -15,7 +15,15 @@
         "groups": [
           {
             "group": "Get Started.",
-            "pages": ["quickstart", "planthome", "development"]
+            "pages": [
+              "quickstart",
+              "planthome",
+              "development",
+              {
+                "group": "phonk",
+                "pages": ["editing/installation", "editing/editor"]
+              }
+            ]
           },
           {
             "group": "Essentials",
@@ -26,6 +34,16 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "SDK",
+            "pages": [
+              "quickstart",
+              {
+                "group": "Editing",
+                "pages": ["editing/installation", "editing/editor"]
+              }
             ]
           }
         ]
@@ -53,8 +71,7 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "href": "https://docs.example.com/quickstart"
         },
         {
           "anchor": "Community",
@@ -65,6 +82,17 @@
           "anchor": "Blog",
           "href": "https://mintlify.com/blog",
           "icon": "newspaper"
+        }
+      ],
+      "languages": [
+        {
+          "language": "fr",
+          "href": "https://mintlify.com/docs"
+        },
+        {
+          "language": "en",
+          "href": "https://mintlify.com/docs",
+          "default": true
         }
       ]
     }
