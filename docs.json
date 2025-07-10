@@ -1,98 +1,176 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
-  "name": "Plant Store",
+  "theme": "mint",
+  "name": "Siderolabs Test Docs",
   "colors": {
-    "primary": "#00A3E1",
-    "light": "#00A3E1",
-    "dark": "#00A3E1"
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "banner": {
+    "content": "🎉 **New Release:** Check out the latest Talos v2.0 features and improvements! [Learn more →](/changelog/june-2025)",
+    "dismissible": true
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
+        "tab": "Talos",
+        "versions": [
           {
-            "group": "Get Started.",
-            "pages": [
-              "quickstart",
-              "planthome",
-              "development",
+            "version": "Talos - v1.0",
+            "groups": [
               {
-                "group": "phonk",
-                "pages": ["editing/installation", "editing/editor"]
+                "group": "Overview",
+                "pages": [
+                  "talos/v1.0/overview/welcome",
+                  "talos/v1.0/overview/what-is-talos",
+                  "talos/v1.0/overview/talos-architectural-overview"
+                ]
+              },
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "talos/v1.0/getting-started/quickstart",
+                  "talos/v1.0/getting-started/system-requirements",
+                  "talos/v1.0/getting-started/talosctl"
+                ]
+              },
+              {
+                "group": "Networking",
+                "pages": [
+                  "talos/v1.0/networking/advanced-networking",
+                  "talos/v1.0/networking/corporate-proxies",
+                  "talos/v1.0/networking/device-selector"
+                ]
+              },
+              {
+                "group": "Platform-Specific Installation",
+                "pages": [
+                  "talos/v1.0/platform-specific-install/air-gapped",
+                  "talos/v1.0/platform-specific-install/boot-assets"
+                ]
               }
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "SDK",
-            "pages": [
-              "quickstart",
+            "version": "Talos - v2.0",
+            "groups": [
               {
-                "group": "Editing",
-                "pages": ["editing/installation", "editing/editor"]
+                "group": "Overview",
+                "pages": [
+                  "talos/v2.0/overview/welcome",
+                  "talos/v2.0/overview/what-is-talos",
+                  "talos/v2.0/overview/talos-architectural-overview"
+                ]
+              },
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "talos/v2.0/getting-started/quickstart",
+                  "talos/v2.0/getting-started/system-requirements",
+                  "talos/v2.0/getting-started/talosctl"
+                ]
+              },
+              {
+                "group": "Networking",
+                "pages": [
+                  "talos/v2.0/networking/advanced-networking",
+                  "talos/v2.0/networking/corporate-proxies",
+                  "talos/v2.0/networking/device-selector"
+                ]
+              },
+              {
+                "group": "Platform-Specific Installation",
+                "pages": [
+                  "talos/v2.0/platform-specific-install/air-gapped",
+                  "talos/v2.0/platform-specific-install/boot-assets"
+                ]
               }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Omni",
         "groups": [
           {
-            "group": "API Documentation",
-            "pages": ["api-reference/introduction"]
+            "group": "Getting Started",
+            "pages": [
+              "omni/getting-started/what-is-omni",
+              "omni/getting-started/quickstart"
+            ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Installation and Setup",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "omni/Installation-and-setup/how-to-install-talosctl",
+              "omni/Installation-and-setup/install-and-configure-omnictl"
+            ]
+          },
+          {
+            "group": "Cluster Management",
+            "pages": [
+              "omni/cluster-management/how-to-create-a-cluster/index",
+              "omni/cluster-management/how-to-create-a-hybrid-cluster/index"
+            ]
+          },
+          {
+            "group": "Security and Authentication",
+            "pages": [
+              "omni/security-and-authentication/authentication-and-authorization",
+              "omni/security-and-authentication/omni-kms-disk-encryption"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Kubernetes Guides",
+        "groups": [
+          {
+            "group": "Deploying and Managing Workloads",
+            "pages": [
+              "kubernetes-guides/deploy-and-manage-workloads/deploy-metrics-server"
+            ]
+          },
+          {
+            "group": "CNI",
+            "pages": [
+              "kubernetes-guides/kubernetes-guides/cni/cilium",
+              "kubernetes-guides/kubernetes-guides/cni/multus"
+            ]
+          },
+          {
+            "group": "CSI",
+            "pages": [
+              "kubernetes-guides/kubernetes-guides/csi/ceph-with-rook",
+              "kubernetes-guides/kubernetes-guides/csi/kubeprism"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "kubernetes-guides/kubernetes-guides/security/pod-security"
             ]
           }
         ]
       }
     ],
+
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://docs.example.com/quickstart"
-        },
         {
           "anchor": "Community",
           "href": "https://mintlify.com/community",
           "icon": "slack"
         },
         {
-          "anchor": "Blog",
+          "anchor": "Changelog",
           "href": "https://mintlify.com/blog",
           "icon": "newspaper"
-        }
-      ],
-      "languages": [
-        {
-          "language": "fr",
-          "href": "https://mintlify.com/docs"
-        },
-        {
-          "language": "en",
-          "href": "https://mintlify.com/docs",
-          "default": true
         }
       ]
     }
@@ -107,12 +185,7 @@
         "label": "Support",
         "href": "mailto:hi@mintlify.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
